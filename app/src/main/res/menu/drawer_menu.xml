@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Tableau de bord" />
+        <item
+            android:id="@+id/nav_add_expense"
+            android:icon="@drawable/ic_money"
+            android:title="Ajouter une dépense" />
+        <item
+            android:id="@+id/nav_revenu"
+            android:icon="@drawable/ic_balance"
+            android:title="Ajouter un revenu" />
+        <item
+            android:id="@+id/nav_add_income"
+            android:icon="@drawable/ic_default_icon"
+            android:title="Ajouter categorie" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_apercu"
+            android:title="Soldes" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_calendar"
+            android:title="Historique" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="Déconnexion" />
+    </group>
+</menu>

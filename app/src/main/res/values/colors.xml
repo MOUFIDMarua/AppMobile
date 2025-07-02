@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_color">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="accent_color">#F4B0CD</color>
+    <color name="accent_dark">#C51162</color>
+    <color name="backgroundColor">#FFFFFF</color>
+    <color name="textColorPrimary">#1C2526</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#1C2526</color>
+    <color name="on_surface_variant">#D3D7DB</color>
+    <color name="chip_stroke">#6577DC</color>
+    <color name="pie_chart_orange">#D18A76</color>
+    <color name="pie_chart_amber">#DED15B</color>
+    <color name="pie_chart_green">#8CE78F</color>
+    <color name="pie_chart_blue">#5B6F80</color>
+    <color name="pie_chart_purple">#CA85D7</color>
+    <color name="pie_chart_pink">#F678A1</color>
+
+    <color name="pie_chart_red">#F294A3</color>
+
+    <color name="pie_chart_grey">#3E3A3A</color>
+
+    <color name="pie_chart_white">#D4BFD7</color>
+
+    <color name="card_balance_color">#A0EAF0</color> <!-- Light Pink -->
+    <color name="card_revenue_color">#E27FF4</color> <!-- Light Blue -->
+    <color name="card_expense_color">#C8E6C9</color> <!-- Light Green -->
+</resources>

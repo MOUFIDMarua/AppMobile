@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "31258489962",
+    "project_id": "gestionfinancieres",
+    "storage_bucket": "gestionfinancieres.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31258489962:android:dd97e2fe96b12248818613",
+        "android_client_info": {
+          "package_name": "com.example.gestionfinanciers"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ55xfwNkYexobkFuUZOhBsvJ7cGKL2u8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:31258489962:android:9be5a7ced049a26d818613",
+        "android_client_info": {
+          "package_name": "com.marouua.beztamy"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ55xfwNkYexobkFuUZOhBsvJ7cGKL2u8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

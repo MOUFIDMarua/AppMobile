@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MyStyle" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Définition des couleurs principales -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent_color</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:textColor">@color/textColorPrimary</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.FAB.RoundedSquare" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+</resources>

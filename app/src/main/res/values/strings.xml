@@ -1,0 +1,142 @@
+<resources>
+    <string name="app_name">Beztamy</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <string name="navigation_drawer_open">Ouvrir le menu de navigation</string>
+    <string name="navigation_drawer_close">Fermer le menu de navigation</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_transactions">NoTransaction</string>
+
+    <string name="add_transaction">Ajouter Transaction</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="openDrawer">Ouvrir le menu</string>
+    <string name="closeDrawer">Fermer le menu</string>
+
+    <string name="dashboard_title">Tableau de bord</string>
+    <string name="total_expenses">Total</string>
+    <string name="average_expenses">Moyenne</string>
+    <string name="no_expenses">Aucune dépense enregistrée</string>
+    <string name="add_expense">Ajouter une dépense</string>
+    <string name="income_type_prompt">Select Income Type</string>
+    <string name="spinner_prompt">Select Type</string>
+    <string name="category_prompt">Sélectionner une catégorie</string>
+
+
+    <!-- Ajout de la liste des catégories -->
+    <string-array name="expense_categories">
+        <item>Alimentation</item>
+        <item>Transport</item>
+        <item>Logement</item>
+        <item>Santé</item>
+        <item>Divertissement</item>
+        <item>Voyages</item>
+        <item>Éducation</item>
+        <item>Autre</item>
+    </string-array>
+
+    <!-- Titres et en-têtes -->
+
+    <string name="categories">Catégories</string>
+    <string name="recent_transactions">Dernières transactions</string>
+    <string name="see_all">Voir tout</string>
+
+    <!-- Statistiques -->
+    <string name="total_income">Revenus</string>
+    <string name="balance">Solde</string>
+
+    <string name="savings_rate">Taux d\'épargne</string>
+
+    <!-- Transactions -->
+
+    <string name="transaction_food">Nourriture</string>
+    <string name="transaction_transport">Transport</string>
+    <string name="transaction_housing">Logement</string>
+    <string name="transaction_entertainment">Loisirs</string>
+    <string name="transaction_other">Autre</string>
+
+    <!-- Boutons et actions -->
+    <string name="add">Ajouter</string>
+    <string name="edit">Modifier</string>
+    <string name="delete">Supprimer</string>
+    <string name="cancel">Annuler</string>
+    <string name="confirm">Confirmer</string>
+    <string name="profile">Profil</string>
+    <string name="settings">Paramètres</string>
+
+    <!-- Messages -->
+    <string name="loading">Chargement en cours…</string>
+    <string name="refresh">Actualiser</string>
+    <string name="pull_to_refresh">Tirer pour actualiser</string>
+    <string name="last_updated">Dernière mise à jour: %s</string>
+
+    <!-- Navigation -->
+
+    <string name="menu_stats">Statistiques</string>
+    <string name="menu_wallet">Portefeuille</string>
+    <string name="menu_profile">Profil</string>
+
+
+    <!-- Formatage -->
+    <string name="currency_format">%1$.2f €</string>
+    <string name="percentage_format">%1$.1f%%</string>
+    <string name="date_format">dd/MM/yyyy</string>
+    <string name="datetime_format">dd/MM à HH:mm</string>
+
+    <!-- Accessibilité -->
+    <string name="a11y_stats_card">Statistiques financières</string>
+    <string name="a11y_expense_chart">Graphique des dépenses</string>
+    <string name="a11y_category_list">Liste des catégories</string>
+    <string name="a11y_transaction_list">Liste des transactions</string>
+    <string name="a11y_add_button">Ajouter une nouvelle transaction</string>
+
+    <!-- Messages d'erreur -->
+    <string name="error_loading_data">Erreur de chargement des données</string>
+    <string name="error_retry">Réessayer</string>
+    <string name="error_no_connection">Pas de connexion Internet</string>
+    <string name="error_unknown">Erreur inconnue</string>
+
+    <!-- Placeholders -->
+    <string name="placeholder_amount">Montant</string>
+    <string name="placeholder_description">Description</string>
+    <string name="placeholder_category">Catégorie</string>
+    <string name="placeholder_date">Date</string>
+
+    <!-- Catégories par défaut -->
+    <string-array name="default_categories">
+        <item>@string/transaction_food</item>
+        <item>@string/transaction_transport</item>
+        <item>@string/transaction_housing</item>
+        <item>@string/transaction_entertainment</item>
+        <item>@string/transaction_other</item>
+    </string-array>
+
+    <!-- Noms des mois pour le graphique -->
+    <string-array name="month_names">
+        <item>Jan</item>
+        <item>Fév</item>
+        <item>Mar</item>
+        <item>Avr</item>
+        <item>Mai</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aoû</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Déc</item>
+    </string-array>
+
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        <item name="colorSecondary">@color/accent_color</item>
+
+        <item name="colorOnSecondary">@android:color/white</item>
+    </style>
+</resources>

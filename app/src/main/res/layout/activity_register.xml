@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/font1"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/logo"
+            android:contentDescription="Logo"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Prénom"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_background"
+                android:textColor="#570101"
+                android:textColorHint="#DD560404"
+                android:layout_marginEnd="8dp" />
+
+            <EditText
+                android:id="@+id/nameEditText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Nom"
+                android:inputType="textPersonName"
+                android:background="@drawable/edit_text_background"
+                android:textColor="#570101"
+                android:textColorHint="#DD560404"
+                android:layout_marginStart="8dp" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Adresse e-mail"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#570101"
+            android:textColorHint="#DD560404"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/phoneEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            android:inputType="phone"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#570101"
+            android:textColorHint="#DD560404"
+            android:layout_marginBottom="16dp" />
+
+
+        <EditText
+            android:id="@+id/initialBalanceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Solde initial"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#570101"
+            android:textColorHint="#DD560404"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#570101"
+            android:textColorHint="#DD560404"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmer le mot de passe"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_background"
+            android:textColor="#590303"
+            android:textColorHint="#DD560404"
+            android:layout_marginBottom="24dp" />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S'inscrire"
+            android:textColor="#590202"
+            android:background="@drawable/boutton_background"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/loginRedirectText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous avez déjà un compte ? Connexion"
+            android:textColor="#054508"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- Contenu principal -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Toolbar avec bouton menu intégré -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Formulaire -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="24dp"
+            android:background="@drawable/font1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center_horizontal"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modifier des Dépenses"
+                    android:textColor="@color/chip_stroke"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginStart="16dp"/>
+                <!-- Spinner Catégorie -->
+                <Spinner
+                    android:id="@+id/categorySpinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:spinnerMode="dropdown"
+                    tools:listitem="@android:layout/simple_spinner_dropdown_item"/>
+
+                <!-- Champ pour catégorie personnalisée -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/categoryInputLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:visibility="gone">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/categoryEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Nom de la catégorie"
+                        android:inputType="textCapWords"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Champ pour le montant -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/amountEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Montant"
+                        android:inputType="numberDecimal"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Champ pour la note -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/noteEditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Description (optionnel)"
+                        android:inputType="textMultiLine"
+                        android:minLines="3"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Bouton d'enregistrement -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/saveButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Enregistrer"
+                    app:backgroundTint="?attr/colorPrimary"
+                    android:textColor="@android:color/white"
+                    app:cornerRadius="8dp"
+                    android:elevation="2dp"/>
+                <Button
+                    android:id="@+id/deleteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Supprimer"
+                    android:visibility="gone"
+                    android:backgroundTint="@android:color/holo_red_light"
+                    android:drawableStart="@drawable/ic_trash"
+                    android:drawablePadding="8dp"
+                    android:padding="12dp"
+                    android:textColor="@android:color/white"
+                    android:textAllCaps="false"
+                    android:layout_marginTop="16dp"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Footer -->
+        <include
+            android:id="@+id/nav_footer"
+            layout="@layout/nav_footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <!-- Navigation Drawer -->
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        app:menu="@menu/drawer_menu"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@color/accent_color"
+        app:itemTextColor="@color/primary_color"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>
